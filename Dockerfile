@@ -4,7 +4,7 @@ LABEL maintainer="Stille <stille@ioiox.com>"
 # 使用构建参数支持多架构构建
 ARG TARGETARCH
 ARG TARGETVARIANT
-ENV VERSION=0.68.1
+ENV VERSION=0.51.2
 ENV TZ=Asia/Shanghai
 
 WORKDIR /
