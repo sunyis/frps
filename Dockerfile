@@ -40,9 +40,6 @@ RUN case "${TARGETARCH}" in \
 # 设置可执行权限
 RUN chmod +x /frp/frps
 
-# 创建默认 hosts 条目文件
-RUN echo "8.8.8.8 dns.google" > /frp/default-config/custom-hosts
-
 # 创建配置目录（确保存在）
 RUN mkdir -p /frp/config
 
