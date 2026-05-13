@@ -44,8 +44,7 @@ RUN chmod +x /frp/frps
 RUN mkdir -p /frp/config
 
 # 自定义DNS
-RUN echo "8.8.8.8" > /frp/default-config/custom-hosts \
-    && echo "114.114.114.114" >> /frp/default-config/custom-hosts
+RUN echo "8.8.8.8" > /frp/default-config/custom-hosts
     
 # 复制初始化脚本
 COPY init.sh /init.sh
